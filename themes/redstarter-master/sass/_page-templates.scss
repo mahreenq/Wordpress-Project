@@ -1,0 +1,614 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+
+/* Front page */
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+.white {
+  color: white;
+}
+
+.orange{
+  color: #d99054;
+}
+
+.green{
+  color: #238a83;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+
+.flex{
+  display: flex;
+}
+
+
+// .banner {
+//    background: linear-gradient(
+//      rgba(0,0,0,0.3),
+//      rgba(0,0,0,0.3)),
+//   url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/logos/inhabitent-logo-full.svg"),
+//   url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/home-hero.jpg");
+//   background-repeat: no-repeat, no-repeat;
+//   height:60vh;
+//   background-position: center, center ;
+//   background-size: 100%, 20%;
+// }
+
+.banner{
+height: 80vh;
+
+}
+
+.home .banner  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.productTypeIcon {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  border: 2px  solid #e1e1e1;
+  padding: 2rem;
+  margin: 0.7rem;
+  //justify-content: center;
+
+}
+
+.productTypeIcon img {
+  width: 30%;
+}
+
+
+.homepageTerm {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+
+}
+
+
+.homeTerms{
+color: white;
+background-color: #238a83;
+width: 70%;
+margin: auto;
+
+}
+
+
+.homeTerms a {
+  color: inherit;
+}
+
+.homedesc{
+  padding: 1rem;
+}
+
+
+.blogshomepage{
+  display: flex;
+  justify-content: space-around;
+}
+
+.bloghomepage {
+  width: 30%;
+  border: 2px  solid #e1e1e1;
+  padding: 1rem;
+  margin: 0.7rem;
+}
+
+.adventureshomepage{
+  display: flex;
+  //flex-wrap: wrap;
+  color: white;
+  height: 70vh;
+
+}
+
+.adventurehomepage{
+  //width: 25%;
+  padding: 0.3rem;
+  //height: 30vh;
+  background-size: 5%;
+  //margin: 0.5rem;
+
+}
+
+
+.adventureHomePageLarge{
+//border-right: 0.5rem solid white;
+}
+
+.adventureHomePageMid{
+
+  border-left:1rem solid white;
+}
+
+.adventureHomePageSmall{
+  border-top: 1rem solid white;
+  border-left:1rem solid white;
+}
+
+.lala {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adventureTitleHome{
+  padding: 2rem 1rem 1rem 1rem;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+
+//products archive
+
+.allproducts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+//
+.singleproduct {
+  width: 23%;
+  border: 0.5rem solid white;
+  //border: 1px solid #e1e1e1;
+
+}
+
+.singleProductImage{
+//  width: 100%;
+  img{
+
+  }
+
+}
+
+.termtitle {
+  border-bottom: 1px dashed #c8c8c8;
+
+ }
+
+
+ .page-title{
+   //border-top: 1px solid #e1e1e1;
+   padding: 2rem;
+   }
+
+  .taxonomy-description{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+.productInfoOnArchive{
+   display: flex;
+   align-items: center;
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  padding: 0.5rem;
+  font-size:0.8rem;;
+
+}
+
+.productNameOnArchive{
+//  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 75%;
+
+
+}
+.productNameOnArchive:after {
+  content: " .........................................................."
+}
+
+.priceOnArchive{
+  //float: left;
+  overflow: hidden;
+  width: 25%;
+}
+
+
+.shoppageTerm{
+  border-bottom: 1px dashed #c8c8c8;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+.productTypeIconShopPage{
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  margin: 0.7rem;
+  color: #238a83;
+}
+
+.shoptitle{
+  // margin: 2rem;
+  // position:sticky;
+}
+
+//footer
+
+
+
+
+
+
+
+//ABOUT PAGE HEADER
+
+// .aboutheader {
+//   background:
+//   linear-gradient( rgba(0,0,0,0.3),
+//                    rgba(0,0,0,0.3)),
+//   url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/about-hero.jpg");
+//  //url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/home-hero.jpg");
+//  background-repeat: no-repeat;
+//  min-height: 30rem;
+//  background-position: center, cover;
+//  background-size: 100%;
+//  color: white;
+//}
+.page-id-18 .banner  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutContent{
+  margin: 0 8rem 2rem 8rem ;
+
+}
+.aboutContent .p1 .s1{
+  font-size: 1.5rem;
+  //text-align: center;
+}
+.aboutContent .p1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+//SINGLE ADVENTURE POST
+
+.adventureSocialMedia {
+  display: flex;
+  //width: 40%;
+  justify-content: space-around;
+}
+.singleAdventureSocialMedia {
+  border: 1px solid black;
+  padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+}
+
+
+
+
+//SINGLE PRODUCT
+
+.productImageSinglePage{
+  width: 50%;
+  padding: 2rem 2rem 2rem 5rem;
+  align-items: center;
+  margin: auto;
+}
+
+.contentSingleProduct{
+  width: 50%;
+  padding: 2rem 5rem 2rem 2rem;
+}
+
+.singleproductpage {
+  display: flex;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  //border-top: 1px solid #e1e1e1;
+}
+
+
+
+
+
+//ADVENTURES ARCHIVE
+
+.allAdventures{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  //margin: auto;
+  justify-content: center;
+}
+
+ .singleAdventure{
+   width: 45%;
+   padding: 2rem 5rem 6rem 2rem ;
+   height: 40vh;
+   border: 0.5rem solid white;
+
+
+   background-position: center center ;
+
+
+ }
+
+.adventureTitleArchivePage{
+  font-size: 2rem;
+}
+
+
+
+//MENU
+
+.menu-item{
+  padding: 1rem;
+}
+.menu-primary-menu-container{
+  padding-right: 2rem;
+}
+.main-navigation{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
+
+//  border-bottom: 2px solid #e1e1e1;
+}
+
+// .homelogo{
+//   padding-left: 2rem;
+// }
+.homelogo img {
+  width: 30%;
+}
+
+
+//HEADER
+
+.menu a, .menu .searchicon {
+  color: #238a83;
+}
+
+.homelogowhite {
+  display: none;
+}
+
+.home .homelogowhite, .single-adventure .homelogowhite , .page-id-18 .homelogowhite {
+  display: block;
+}
+
+.home .menu a, .single-adventure .menu a , .page-id-18 .menu a , .home .menu .searchicon, .single-adventure .menu .searchicon , .page-id-18 .menu .searchicon {
+  color: white;
+
+}
+
+.home .homelogogreen , .single-adventure .homelogogreen, .page-id-18 .homelogogreen{
+  display: none;
+}
+
+.home .main-navigation , .single-adventure .main-navigation , .page-id-18 .main-navigation{
+  border: none;
+  position: absolute;
+}
+// .site-header{
+//   //background:transparent;
+//   position: fixed;
+//
+// }
+
+
+
+//FOOTER
+.footer {
+  background: linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)),
+ url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/dark-wood.png");
+ //url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/home-hero.jpg");
+ background-repeat: repeat;
+ height:50vh;
+ background-position: center, cover ;
+ background-size: 100%;
+ color: white;
+ display: flex;
+ margin: auto;
+}
+li {
+  list-style: none;
+}
+
+.contact , .hours {
+  margin: auto;
+  line-height: 3rem;
+  padding: 0;
+}
+
+
+.footer .widget-area{
+  display: flex;
+  width:100%;
+  flex-flow: row wrap;
+
+}
+
+#text-3 , #text-2 {
+  width: 25%;
+}
+#media_image-2 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    height: 25%;
+    padding-right: 4rem;
+    //padding-top: 3rem;
+  }
+#text-6{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+.footer .widget {
+  padding: 2rem;
+}
+
+.footer .widget-title{
+  color: #d99054;
+}
+
+
+
+
+//SIDEBAR
+
+.sidebar {
+  width: 25%;
+  font-size: 0.8rem;
+  border-left: 1px solid #e1e1e1;
+  padding: 1rem;
+
+    .widget-text{
+      margin: 2rem;
+      line-height: 1px;
+    }
+}
+
+//FINDUS PAGE
+.googlemap{
+  display: flex;
+  justify-content: center;
+}
+
+
+//JOURNAL ARCHIVE
+
+.allPosts {
+  width: 80%;
+}
+.singleJournalImage{
+  height: 70vh;
+  justify-content: space-around;
+}
+
+.singleJournalOnArchive{
+    border: 3rem solid white;
+
+}
+.titleOnJournalPage{
+  width: 60%;
+  padding: 1rem;
+  font-size: 2.5rem;
+  background-color: #238a83;
+  margin-top: 2rem;
+}
+
+.commentsOnJournalArchive{
+  width: 60%;
+  background-color: #238a83;
+}
+
+
+
+//body for pages with siudebar
+
+.page-body{
+  width: 75%
+}
+
+
+
+//BUTTONS
+@mixin button-bg($bg) {
+  background-color: $bg;
+}
+@mixin button-textborder ($tb) {
+  color: $tb;
+  border: 1px solid $tb;
+}
+
+
+
+a .green-button:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.green-button{
+  @include button-bg(#238a83);
+  padding: 0.3rem;
+    a{
+      color: white;
+    }
+    border: none;
+}
+
+.white-button{
+  @include button-bg(transparent);
+  padding: 0.3rem;
+    a{
+      @include button-textborder(black);
+    }
+
+}
+
+.transparent-button{
+    @include button-bg(transparent);
+    padding: 0.3rem;
+      a{
+        @include button-textborder(white);
+      }
+
+  }
+
+  .more-adv-button{
+    width: 25%;
+  }
+
+
+
+
+
+//singleJournalOnArchive
+.searchbox {
+margin-top: 15px;
+margin-right: 20px;
+}
+.search-form{
+  display: none;
+  border: none;
+  padding: none;
+}
+.searchbox {
+  border: none;
+  padding: 0;
+  margin-top: auto;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem;
+}
