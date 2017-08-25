@@ -8,9 +8,7 @@
  /**
   * Create custom post type(s)
   */
-  ?>
 
-  <?php
 
   function my_product_taxonomy($cpt) {
     $labels = array(

@@ -11,10 +11,8 @@ get_banner();
 ?>
 
 
-
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php
-
 
 						echo '<h2>';
 						the_title();
@@ -24,15 +22,9 @@ get_banner();
 						the_content();
 						?>
 
-
 <?php get_template_part( 'template-parts/content-socialmedia' ); ?>
 
-
-
-
-		<?php endwhile; // End of the loop. ?>
-
-
+<?php endwhile; // End of the loop. ?>
 
 
 <?php get_footer(); ?>

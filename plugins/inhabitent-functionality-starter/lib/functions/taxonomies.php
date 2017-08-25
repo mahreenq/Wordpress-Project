@@ -8,11 +8,6 @@
  /**
   * Create custom Taxonomy(ies)
   */
- ?>
-
-
-
- <?php
 
 
  function get_post_args($cpt){
