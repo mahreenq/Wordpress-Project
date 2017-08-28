@@ -8,11 +8,11 @@
  */
 
 get_header();
-echo '404.php';
+
  ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area flex">
+		<main id="main" class="site-main width75" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -24,12 +24,13 @@ echo '404.php';
 
 					<?php  get_search_form(); ?>
 
+
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
 					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
-						<ul>
+						<ul class="">
 						<?php
 							wp_list_categories( array(
 								'orderby'    => 'count',
@@ -52,6 +53,7 @@ echo '404.php';
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
+    <div> <?php get_sidebar(); ?></div>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

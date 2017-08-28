@@ -7,7 +7,6 @@
 
 get_header();
 
-
 ?>
 
 	<section id="primary" class="content-area flex">

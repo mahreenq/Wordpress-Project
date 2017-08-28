@@ -11,13 +11,13 @@
 
 
 
-<div class="singleproductpage">
+<div class="singleproductpage flex">
 
-				<div class="productImageSinglePage">
+				<div class="productImageSinglePage width50 padding-sm paddingleftlarge align-items-center marginauto">
 					<?php  the_post_thumbnail(); ?>
 				</div>
 
-				<div class="contentSingleProduct">
+				<div class="contentSingleProduct width50 padding-sm">
 					<h2 class="orange uppercase"> <?php the_title();?> </h2>
 
 

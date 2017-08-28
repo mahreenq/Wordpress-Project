@@ -36,6 +36,6 @@
 
 jQuery(document).ready(function($){
   $(".searchicon").click(function(){
-			$('.search-form').animate({width: 'toggle'});
+			$('.menu .search-form').animate({width: 'toggle'});
   });
 });

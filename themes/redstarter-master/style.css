@@ -721,8 +721,26 @@ object {
 .dashedBorderBottom {
   border-bottom: 1px dashed #c8c8c8; }
 
+.solidgreyborderallaround {
+  border: 2px  solid #e1e1e1; }
+
+.solidgreyborderallaroundsm {
+  border: 1px solid #e1e1e1; }
+
+.solidgreybordertoplrg {
+  border-top: 5px solid #e1e1e1; }
+
+.solidwhiteborderleft {
+  border-left: 1rem solid white; }
+
+.solidwhitebordertop {
+  border-top: 1rem solid white; }
+
+.solidborderwhitesm {
+  border: 0.5rem solid white; }
+
 .white {
-  color: #fff; }
+  color: white; }
 
 .orange {
   color: #d99054; }
@@ -734,155 +752,55 @@ object {
   text-transform: uppercase; }
 
 .smallfont {
-  font-size: 0.8rem;
-  padding-bottom: 0.3rem; }
+  font-size: 0.8rem; }
+
+.med-font {
+  font-size: 2rem; }
+
+.overflowhidden {
+  overflow: hidden; }
 
 .banner {
   height: 80vh; }
 
-.home .banner {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.productTypeIcon {
-  width: 25%;
-  margin: auto;
-  border: 2px  solid #e1e1e1;
-  padding: 2rem;
-  margin: 0.7rem; }
-
-.productTypeIcon img {
-  width: 30%; }
-
-.homepageTerm {
-  width: 90%;
-  margin: auto; }
-
 .homeTerms {
-  width: 70%;
-  margin: auto; }
-
-.homedesc {
-  padding: 1rem; }
-
-.bloghomepage {
-  width: 30%;
-  border: 2px  solid #e1e1e1;
-  padding: 1rem;
-  margin: 0.7rem; }
+  width: 70%; }
 
 .adventureshomepage {
-  color: white;
-  height: 70vh;
-  margin-left: 2rem;
-  margin-right: 2rem; }
-  .adventureshomepage .transparent-button {
-    margin-left: 1rem; }
-
-.adventurehomepage {
-  padding: 0.3rem;
-  background-size: 5%; }
-
-.adventureHomePageMid {
-  border-left: 1rem solid white; }
-
-.adventureHomePageSmall {
-  border-top: 1rem solid white;
-  border-left: 1rem solid white; }
-
-.lala {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  height: 70vh; }
 
 .adventureTitleHome {
-  padding: 2rem 1rem 1rem 1rem;
-  font-size: 2rem; }
-
-.allproducts {
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
-
-.singleproduct {
-  width: 23%;
-  border: 0.5rem solid white; }
+  padding: 2rem 1rem 1rem 1rem; }
 
 .productInfoOnArchive {
-  border: 1px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1;
-  padding: 0.5rem;
-  font-size: 0.8rem; }
+  padding: 0.3rem; }
 
 .productNameOnArchive {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 75%; }
+  white-space: nowrap; }
 
 .productNameOnArchive:after {
   content: " .........................................................."; }
 
-.priceOnArchive {
-  overflow: hidden;
-  width: 25%; }
-
 .shoppageTerm {
-  width: 90%;
-  margin: auto;
-  padding: none; }
-
-.productTypeIconShopPage {
-  width: 25%;
-  margin: auto;
-  padding: 2rem;
-  margin: 0.7rem;
-  color: #238a83; }
-
-.page-id-18 .banner {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  width: 90%; }
 
 .aboutContent {
   margin: 5rem 8rem 5rem 8rem; }
-
-.aboutContent .p1 .s1 {
-  font-size: 1.5rem; }
-
-.aboutContent .p1 {
-  text-align: center;
-  text-transform: uppercase; }
-
-.adventureSocialMedia {
-  display: -ms-flexbox;
-  display: flex; }
+  .aboutContent .p1 {
+    text-align: center;
+    text-transform: uppercase; }
+    .aboutContent .p1 .s1 {
+      font-size: 1.5rem; }
 
 .singleAdventureSocialMedia {
   border: 1px solid black;
   padding: 0.3rem 1.5rem 0.3rem 1.5rem;
   margin-right: 1rem; }
 
-.productImageSinglePage {
-  width: 50%;
-  padding: 2rem 2rem 2rem 5rem;
-  -ms-flex-align: center;
-      align-items: center;
-  margin: auto; }
-
 .contentSingleProduct {
-  width: 50%;
-  padding: 2rem 5rem 2rem 2rem; }
+  padding-right: 5rem; }
 
 .singleproductpage {
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 2rem;
   padding-top: 1rem; }
 
@@ -911,7 +829,7 @@ object {
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/dark-wood.png");
   background-repeat: repeat;
-  height: 50vh;
+  height: 45vh;
   background-position: center, cover;
   background-size: 100%;
   color: white;
@@ -1031,7 +949,7 @@ a .green-button:hover {
   margin-top: 15px;
   margin-right: 20px; }
 
-.search-form {
+.menu-item .search-form {
   display: none;
   border: none;
   padding: none; }
@@ -1047,6 +965,18 @@ fieldset {
 
 .width75 {
   width: 75%; }
+
+.width25 {
+  width: 25%; }
+
+.width30 {
+  width: 30%; }
+
+.width90 {
+  width: 90%; }
+
+.width50 {
+  width: 50%; }
 
 .entry-footer {
   padding-top: 1rem;
@@ -1105,8 +1035,29 @@ fieldset {
 .text-align-left {
   text-align: left; }
 
+.paddingnone {
+  padding: none; }
+
+.padding-xs {
+  padding: 0.8rem; }
+
+.padding-bottom-xs {
+  padding-bottom: 0.3rem; }
+
+.padding-0.3rem {
+  padding: 0.3rem; }
+
+.padding1rem {
+  padding: 1rem; }
+
 .padding-sm {
   padding: 2rem; }
+
+.padding-top-sm {
+  padding-top: 2rem; }
+
+.padding-bottom-sm {
+  padding-bottom: 2rem; }
 
 .padding-top-bottom-sm {
   padding-top: 2rem;
@@ -1114,6 +1065,42 @@ fieldset {
 
 .padding-med {
   padding: 4rem; }
+
+.paddingleftlarge {
+  padding-left: 5rem; }
+
+.marginauto {
+  margin: auto; }
+
+.margin-xsm {
+  margin: 0.7rem; }
+
+.margin-left-1rem {
+  margin-left: 1rem; }
+
+.margin-left-right-med {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.margin-top-bottom-lrg {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.margin-left-right-lrg {
+  padding-right: 5rem;
+  padding-left: 5rem; }
+
+.margin-top-lrg {
+  margin-top: 5rem; }
+
+.margin-bottom-lrg {
+  margin-bottom: 5rem; }
+
+.margin-right-lrg {
+  margin-right: 5rem; }
+
+.margin-left-lrg {
+  margin-left: 5rem; }
 
 @font-face {
   font-family: Novecento;

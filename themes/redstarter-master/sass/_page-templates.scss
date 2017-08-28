@@ -5,16 +5,34 @@
 
 .dashedBorderBottom {
   border-bottom: 1px dashed #c8c8c8;
-  //padding-top: 3rem;
-  //padding-bottom: 3rem;
+}
+.solidgreyborderallaround{
+  border: 2px  solid #e1e1e1;
+}
+.solidgreyborderallaroundsm{
+  border: 1px solid #e1e1e1;
+}
+.solidgreybordertoplrg{
+  border-top: 5px solid #e1e1e1;
 }
 
+.solidwhiteborderleft{
+  border-left:1rem solid white;
+}
+.solidwhitebordertop{
+  border-top: 1rem solid white;
+}
+
+.solidborderwhitesm{
+  border: 0.5rem solid white;
+}
 
 .white {
-  color: $color__background-body;
+  color: white;
 }
 
 .orange{
+
   color: #d99054;
 }
 
@@ -27,230 +45,67 @@
 
 .smallfont{
   font-size: 0.8rem;
-  padding-bottom: 0.3rem;
 }
 
+.med-font{
+  font-size: 2rem;
+}
+
+.overflowhidden{
+  overflow: hidden;
+}
 
 .banner{
 height: 80vh;
-
 }
 
-.home .banner  {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.productTypeIcon {
-  width: 25%;
-  margin: auto;
-  //text-align: center;
-  border: 2px  solid #e1e1e1;
-  padding: 2rem;
-  margin: 0.7rem;
-
-}
-
-.productTypeIcon img {
-  width: 30%;
-}
-
-
-.homepageTerm {
-  //display: flex;
-//  justify-content: space-around;
-  width: 90%;
-  margin: auto;
-
-}
-
-
+//HOMEPAGE
 .homeTerms{
-// color: white;
-// background-color: #238a83;
 width: 70%;
-margin: auto;
-}
-
-
-.homedesc{
-  padding: 1rem;
-}
-
-
-// .blogshomepage{
-//   display: flex;
-//   justify-content: space-around;
-// }
-
-.bloghomepage {
-  width: 30%;
-  border: 2px  solid #e1e1e1;
-  padding: 1rem;
-  margin: 0.7rem;
 }
 
 .adventureshomepage{
-  //display: flex;
-  color: white;
   height: 70vh;
-  margin-left: 2rem;
-  margin-right: 2rem;
-    .transparent-button{
-      margin-left: 1rem;
-    }
-
-}
-
-.adventurehomepage{
-  padding: 0.3rem;
-  background-size: 5%;
-}
-
-
-
-.adventureHomePageMid{
-
-  border-left:1rem solid white;
-}
-
-.adventureHomePageSmall{
-  border-top: 1rem solid white;
-  border-left:1rem solid white;
-}
-
-.lala {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .adventureTitleHome{
   padding: 2rem 1rem 1rem 1rem;
-  font-size: 2rem;
 }
-
-// h1 {
-//   text-align: center;
-// }
-
-
 
 
 //products archive
 
-.allproducts{
-  margin-top: 5rem;
-  margin-bottom: 5rem
-}
-//
-.singleproduct {
-  width: 23%;
-  border: 0.5rem solid white;
-  //border: 1px solid #e1e1e1;
-
-}
-
-.singleProductImage{
-//  width: 100%;
-  img{
-
-  }
-
-}
-
-
- .page-title{
-   //border-top: 1px solid #e1e1e1;
-   //padding: 1rem;
-   }
-
-  .taxonomy-description{
-    //text-align: center;
-    //margin-bottom: 3rem;
-  }
-
 .productInfoOnArchive{
-   //display: flex;
-   //align-items: center;
-  border: 1px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1;
-  padding: 0.5rem;
-  font-size:0.8rem;;
-
+  padding: 0.3rem;
 }
-
 .productNameOnArchive{
-//  float: left;
-  overflow: hidden;
   white-space: nowrap;
-  width: 75%;
-
-
 }
 .productNameOnArchive:after {
   content: " .........................................................."
 }
 
-.priceOnArchive{
-  //float: left;
-  overflow: hidden;
-  width: 25%;
-}
-
-
 .shoppageTerm{
-
-//  display: flex;
-  //justify-content: space-around;
   width: 90%;
-  margin: auto;
-  padding: none;
 }
 
-.productTypeIconShopPage{
-  width: 25%;
-  margin: auto;
-  //text-align: center;
-  padding: 2rem;
-  margin: 0.7rem;
-  color: #238a83;
-}
-
-// .shoptitle{
-//   // margin: 2rem;
-//   // position:sticky;
-// }
-
-
-.page-id-18 .banner  {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+//ABOUT PAGE
 
 .aboutContent{
   margin: 5rem 8rem 5rem 8rem ;
+  .p1{
+    text-align: center;
+    text-transform: uppercase;
+    .s1{
+      font-size: 1.5rem;
+    }
+  }
+}
 
-}
-.aboutContent .p1 .s1{
-  font-size: 1.5rem;
-  //text-align: center;
-}
-.aboutContent .p1{
-  text-align: center;
-  text-transform: uppercase;
-}
 
 
 //SINGLE ADVENTURE POST
 
-.adventureSocialMedia {
-  display: flex;
-  //width: 40%;
-  //justify-content: space-around;
-}
 .singleAdventureSocialMedia {
   border: 1px solid black;
   padding: 0.3rem 1.5rem 0.3rem 1.5rem;
@@ -259,40 +114,22 @@ margin: auto;
 
 
 
-
 //SINGLE PRODUCT
 
-.productImageSinglePage{
-  width: 50%;
-  padding: 2rem 2rem 2rem 5rem;
-  align-items: center;
-  margin: auto;
-}
-
 .contentSingleProduct{
-  width: 50%;
-  padding: 2rem 5rem 2rem 2rem;
+padding-right: 5rem;
 }
 
 .singleproductpage {
-  display: flex;
   margin-bottom: 2rem;
   padding-top: 1rem;
-  //border-top: 1px solid #e1e1e1;
 }
-
-
-
 
 
 //ADVENTURES ARCHIVE
 
 .allAdventures{
-//  display: flex;
-  //flex-wrap: wrap;
   padding: 1rem;
-  //margin: auto;
-  //justify-content: center;
 }
 
  .singleAdventure{
@@ -307,10 +144,6 @@ margin: auto;
      background-position: bottom;
    }
  }
-
-// .adventureTitleArchivePage{
-//   font-size: 2rem;
-// }
 
 
 
@@ -338,13 +171,11 @@ margin: auto;
     rgba(0,0,0,0.3),
     rgba(0,0,0,0.3)),
  url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/dark-wood.png");
- //url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/home-hero.jpg");
  background-repeat: repeat;
- height:50vh;
+ height:45vh;
  background-position: center, cover ;
  background-size: 100%;
  color: white;
- //display: flex;
  margin: auto;
 }
 li {
@@ -396,7 +227,6 @@ li {
 //SIDEBAR
 
 .sidebar {
-  //width: 25%;
   height: 100%;
   font-size: 0.8rem;
   border-left: 1px solid #e1e1e1;
@@ -426,9 +256,6 @@ li {
   .singleJournalOnArchive{
     width: 75%;
   }
-  // .sidebar{
-  //   width: 100%;
-  // }
 }
 
 .singleJournalOnArchive{
@@ -467,13 +294,10 @@ li {
   border: 1px solid $tb;
 }
 
-
-
 a .green-button:hover {
     text-decoration: none;
     color: inherit;
 }
-
 .green-button{
   @include button-bg(#238a83);
   padding: 0.3rem;
@@ -482,7 +306,6 @@ a .green-button:hover {
       padding: 0.5rem;
     }
     border: none;
-
 }
 
 .white-button{
@@ -523,7 +346,7 @@ a .green-button:hover {
 margin-top: 15px;
 margin-right: 20px;
 }
-.search-form{
+.menu-item .search-form{
   display: none;
   border: none;
   padding: none;
@@ -541,6 +364,18 @@ fieldset {
 
 .width75{
   width: 75%;
+}
+.width25{
+  width: 25%;
+}
+.width30{
+  width: 30%;
+}
+.width90{
+  width: 90%;
+}
+.width50{
+  width: 50%;
 }
 
 .entry-footer{

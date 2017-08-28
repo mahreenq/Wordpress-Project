@@ -13,7 +13,7 @@
 
 <?php echo '<h1 class="text-align-center"> LATEST ADVENTURES</h1>'; ?>
 
-<?php echo '<div class="adventureshomepage flex">'; ?>
+<?php echo '<div class="adventureshomepage flex white margin-left-right-med">'; ?>
 <?php
 $args = array( 'post_type' => 'adventure', 'posts_per_page' => 4 );
    $loop = new WP_Query( $args );
@@ -29,23 +29,23 @@ $args = array( 'post_type' => 'adventure', 'posts_per_page' => 4 );
 
   <?php } else if ($i===1){ ?>
   <?php  $i+=1;?>
-<div class="lala" style="width:50%;">
+<div class="mixAdvhomepage flex flex-wrap" style="width:50%;">
 
-    <div class="adventureHomePageMid" style="width:100%;height:50%;background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<?php echo $backgroundImg[0]; ?>');background-size:cover;">
+    <div class="adventureHomePageMid solidwhiteborderleft" style="width:100%;height:50%;background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<?php echo $backgroundImg[0]; ?>');background-size:cover;">
 
   <?php  }else { ?>
 
-    <div class="adventureHomePageSmall" style="width:50%;height:50%;background:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('<?php echo $backgroundImg[0]; ?>');background-size:cover;">
+    <div class="adventureHomePageSmall solidwhiteborderleft solidwhitebordertop" style="width:50%;height:50%;background:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('<?php echo $backgroundImg[0]; ?>');background-size:cover;">
 
   <?php  };  ?>
 
   <?php
 
-  echo '<div class="adventureTitleHome Merriweather">';
+  echo '<div class="adventureTitleHome Merriweather med-font">';
   the_title();
   echo '</div>';
 
-     echo '<div class="transparent-button"><a href="'.get_permalink().'"> READ MORE </a></div>';
+     echo '<div class="transparent-button margin-left-1rem"><a href="'.get_permalink().'"> READ MORE </a></div>';
      echo '</div>'; ?>
 
 <?php  endwhile; ?>

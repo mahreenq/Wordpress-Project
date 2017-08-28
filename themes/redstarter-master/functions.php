@@ -98,16 +98,6 @@ add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
 
 
-// function searchjs() {
-// 	//wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-//
-// 	wp_enqueue_script( 'search', get_template_directory_uri() . '/build/js/search.js', array(), true );
-//
-//
-// }
-// add_action( 'wp_enqueue_scripts', 'searchjs' );
-
-
 //FONT AWESOME
 function wmpudev_enqueue_icon_stylesheet() {
     wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
@@ -116,14 +106,6 @@ function wmpudev_enqueue_icon_stylesheet() {
 add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
 
 
-// function enqueue_styles() {
-//
-//     /** REGISTER css/screen.css **/
-//     wp_register_style( 'main', THEME_DIR . '/main.css', array(), '1', 'all' );
-//     wp_enqueue_style( 'main' );
-//
-// }
-// add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 
 
 
@@ -145,7 +127,7 @@ require get_template_directory() . '/inc/extras.php';
 function get_banner(){
     if(is_front_page()){
 $img= "http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/home-hero.jpg";
-echo '<section class="banner" style="background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('.$img.'); background-size:cover;">';
+echo '<section class="banner flex justify-content-center align-items-center" style="background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('.$img.'); background-size:cover;">';
 
 echo '<img src="http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/logos/inhabitent-logo-full.svg">';
 
@@ -155,7 +137,7 @@ else if(is_page(about)){
 
 	$img= get_field("banner_image");
 
-echo '<section class="banner" style="background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('.$img.'); background-size:cover;">';
+echo '<section class="banner flex justify-content-center align-items-center" style="background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('.$img.'); background-size:cover;">';
 echo '<h1 class="white">';
 the_title();
 echo '</h1>';
@@ -197,7 +179,7 @@ add_action( 'widgets_init', 'wpb_widgets_init' );
 
 add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
 function add_search_box( $items, $args ) {
-	$items .= '<li class="searchicon menu-item "> <i class= "fa fa-search" aria-hidden="true"></i></li> <li class="searchbox menu-item">' . get_search_form( false ) . '</li>';
+	$items .= '<li class="searchicon menu-item "> <i class= "fa fa-search" aria-hidden="true"></i></li> <li class="searchbox menu-item ">' . get_search_form( false ) . '</li>';
 
 
 return $items;

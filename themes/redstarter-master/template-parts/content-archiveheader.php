@@ -34,12 +34,12 @@ else if(is_tax()=="product type"){
 	      $count = count( $terms );
 	      $term_list = '<p class="my-term-archive">';
 
-	      echo '<div class= "shoppageTerm flex justify-content-space-around dashedBorderBottom"> ';
+	      echo '<div class= "shoppageTerm flex justify-content-space-around dashedBorderBottom marginauto paddingnone"> ';
 	      foreach ( $terms as $term ) {
 	          $i++;
 
 	          $name = $term->name;
-	          $term_list .= ' <div class= "productTypeIconShopPage text-align-center">  <a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $name ) ) . '">' . $name .'</a> </button>' .'</div>';
+	          $term_list .= ' <div class= "productTypeIconShopPage text-align-center marginauto width25 padding-sm margin-xsm green">  <a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $name ) ) . '">' . $name .'</a> </button>' .'</div>';
 
 	      }
 
@@ -51,4 +51,4 @@ else if(is_tax()=="product type"){
 
 ?>
 
-<div class="allproducts flex flex-wrap justify-content-center">
+<div class="allproducts flex flex-wrap justify-content-center margin-top-bottom-lrg margin-left-right-med">
