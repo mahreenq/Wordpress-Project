@@ -3,19 +3,15 @@
 --------------------------------------------------------------*/
 
 
-/* Front page */
-
-a{
-  text-decoration: none;
+.dashedBorderBottom {
+  border-bottom: 1px dashed #c8c8c8;
+  //padding-top: 3rem;
+  //padding-bottom: 3rem;
 }
 
-a:hover{
-  text-decoration: none;
-  color: inherit;
-}
 
 .white {
-  color: white;
+  color: $color__background-body;
 }
 
 .orange{
@@ -29,22 +25,11 @@ a:hover{
   text-transform: uppercase;
 }
 
-.flex{
-  display: flex;
+.smallfont{
+  font-size: 0.8rem;
+  padding-bottom: 0.3rem;
 }
 
-
-// .banner {
-//    background: linear-gradient(
-//      rgba(0,0,0,0.3),
-//      rgba(0,0,0,0.3)),
-//   url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/logos/inhabitent-logo-full.svg"),
-//   url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/home-hero.jpg");
-//   background-repeat: no-repeat, no-repeat;
-//   height:60vh;
-//   background-position: center, center ;
-//   background-size: 100%, 20%;
-// }
 
 .banner{
 height: 80vh;
@@ -61,11 +46,10 @@ height: 80vh;
 .productTypeIcon {
   width: 25%;
   margin: auto;
-  text-align: center;
+  //text-align: center;
   border: 2px  solid #e1e1e1;
   padding: 2rem;
   margin: 0.7rem;
-  //justify-content: center;
 
 }
 
@@ -75,8 +59,8 @@ height: 80vh;
 
 
 .homepageTerm {
-  display: flex;
-  justify-content: space-around;
+  //display: flex;
+//  justify-content: space-around;
   width: 90%;
   margin: auto;
 
@@ -84,27 +68,22 @@ height: 80vh;
 
 
 .homeTerms{
-color: white;
-background-color: #238a83;
+// color: white;
+// background-color: #238a83;
 width: 70%;
 margin: auto;
-
 }
 
-
-.homeTerms a {
-  color: inherit;
-}
 
 .homedesc{
   padding: 1rem;
 }
 
 
-.blogshomepage{
-  display: flex;
-  justify-content: space-around;
-}
+// .blogshomepage{
+//   display: flex;
+//   justify-content: space-around;
+// }
 
 .bloghomepage {
   width: 30%;
@@ -114,26 +93,23 @@ margin: auto;
 }
 
 .adventureshomepage{
-  display: flex;
-  //flex-wrap: wrap;
+  //display: flex;
   color: white;
   height: 70vh;
+  margin-left: 2rem;
+  margin-right: 2rem;
+    .transparent-button{
+      margin-left: 1rem;
+    }
 
 }
 
 .adventurehomepage{
-  //width: 25%;
   padding: 0.3rem;
-  //height: 30vh;
   background-size: 5%;
-  //margin: 0.5rem;
-
 }
 
 
-.adventureHomePageLarge{
-//border-right: 0.5rem solid white;
-}
 
 .adventureHomePageMid{
 
@@ -155,9 +131,9 @@ margin: auto;
   font-size: 2rem;
 }
 
-h1 {
-  text-align: center;
-}
+// h1 {
+//   text-align: center;
+// }
 
 
 
@@ -165,10 +141,8 @@ h1 {
 //products archive
 
 .allproducts{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem
 }
 //
 .singleproduct {
@@ -186,25 +160,20 @@ h1 {
 
 }
 
-.termtitle {
-  border-bottom: 1px dashed #c8c8c8;
-
- }
-
 
  .page-title{
    //border-top: 1px solid #e1e1e1;
-   padding: 2rem;
+   //padding: 1rem;
    }
 
   .taxonomy-description{
-    text-align: center;
-    margin-bottom: 3rem;
+    //text-align: center;
+    //margin-bottom: 3rem;
   }
 
 .productInfoOnArchive{
-   display: flex;
-   align-items: center;
+   //display: flex;
+   //align-items: center;
   border: 1px solid #e1e1e1;
   border-top: 5px solid #e1e1e1;
   padding: 0.5rem;
@@ -232,49 +201,29 @@ h1 {
 
 
 .shoppageTerm{
-  border-bottom: 1px dashed #c8c8c8;
-  display: flex;
-  justify-content: space-around;
+
+//  display: flex;
+  //justify-content: space-around;
   width: 90%;
   margin: auto;
+  padding: none;
 }
 
 .productTypeIconShopPage{
   width: 25%;
   margin: auto;
-  text-align: center;
+  //text-align: center;
   padding: 2rem;
   margin: 0.7rem;
   color: #238a83;
 }
 
-.shoptitle{
-  // margin: 2rem;
-  // position:sticky;
-}
-
-//footer
+// .shoptitle{
+//   // margin: 2rem;
+//   // position:sticky;
+// }
 
 
-
-
-
-
-
-//ABOUT PAGE HEADER
-
-// .aboutheader {
-//   background:
-//   linear-gradient( rgba(0,0,0,0.3),
-//                    rgba(0,0,0,0.3)),
-//   url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/about-hero.jpg");
-//  //url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/home-hero.jpg");
-//  background-repeat: no-repeat;
-//  min-height: 30rem;
-//  background-position: center, cover;
-//  background-size: 100%;
-//  color: white;
-//}
 .page-id-18 .banner  {
   display: flex;
   justify-content: center;
@@ -282,7 +231,7 @@ h1 {
 }
 
 .aboutContent{
-  margin: 0 8rem 2rem 8rem ;
+  margin: 5rem 8rem 5rem 8rem ;
 
 }
 .aboutContent .p1 .s1{
@@ -300,11 +249,12 @@ h1 {
 .adventureSocialMedia {
   display: flex;
   //width: 40%;
-  justify-content: space-around;
+  //justify-content: space-around;
 }
 .singleAdventureSocialMedia {
   border: 1px solid black;
   padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  margin-right: 1rem;
 }
 
 
@@ -338,28 +288,29 @@ h1 {
 //ADVENTURES ARCHIVE
 
 .allAdventures{
-  display: flex;
-  flex-wrap: wrap;
+//  display: flex;
+  //flex-wrap: wrap;
   padding: 1rem;
   //margin: auto;
-  justify-content: center;
+  //justify-content: center;
 }
 
  .singleAdventure{
    width: 45%;
    padding: 2rem 5rem 6rem 2rem ;
-   height: 40vh;
+   height: 60vh;
    border: 0.5rem solid white;
-
-
    background-position: center center ;
-
-
+ }
+ .single-adventure{
+   .banner{
+     background-position: bottom;
+   }
  }
 
-.adventureTitleArchivePage{
-  font-size: 2rem;
-}
+// .adventureTitleArchivePage{
+//   font-size: 2rem;
+// }
 
 
 
@@ -371,54 +322,13 @@ h1 {
 .menu-primary-menu-container{
   padding-right: 2rem;
 }
-.main-navigation{
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #e1e1e1;
 
-//  border-bottom: 2px solid #e1e1e1;
-}
 
-// .homelogo{
-//   padding-left: 2rem;
-// }
 .homelogo img {
   width: 30%;
 }
 
 
-//HEADER
-
-.menu a, .menu .searchicon {
-  color: #238a83;
-}
-
-.homelogowhite {
-  display: none;
-}
-
-.home .homelogowhite, .single-adventure .homelogowhite , .page-id-18 .homelogowhite {
-  display: block;
-}
-
-.home .menu a, .single-adventure .menu a , .page-id-18 .menu a , .home .menu .searchicon, .single-adventure .menu .searchicon , .page-id-18 .menu .searchicon {
-  color: white;
-
-}
-
-.home .homelogogreen , .single-adventure .homelogogreen, .page-id-18 .homelogogreen{
-  display: none;
-}
-
-.home .main-navigation , .single-adventure .main-navigation , .page-id-18 .main-navigation{
-  border: none;
-  position: absolute;
-}
-// .site-header{
-//   //background:transparent;
-//   position: fixed;
-//
-// }
 
 
 
@@ -434,7 +344,7 @@ h1 {
  background-position: center, cover ;
  background-size: 100%;
  color: white;
- display: flex;
+ //display: flex;
  margin: auto;
 }
 li {
@@ -486,7 +396,8 @@ li {
 //SIDEBAR
 
 .sidebar {
-  width: 25%;
+  //width: 25%;
+  height: 100%;
   font-size: 0.8rem;
   border-left: 1px solid #e1e1e1;
   padding: 1rem;
@@ -497,11 +408,7 @@ li {
     }
 }
 
-//FINDUS PAGE
-.googlemap{
-  display: flex;
-  justify-content: center;
-}
+
 
 
 //JOURNAL ARCHIVE
@@ -512,6 +419,16 @@ li {
 .singleJournalImage{
   height: 70vh;
   justify-content: space-around;
+}
+
+
+.single-post{
+  .singleJournalOnArchive{
+    width: 75%;
+  }
+  // .sidebar{
+  //   width: 100%;
+  // }
 }
 
 .singleJournalOnArchive{
@@ -535,7 +452,7 @@ li {
 
 //body for pages with siudebar
 
-.page-body{
+.page-body .page-id-{
   width: 75%
 }
 
@@ -562,16 +479,21 @@ a .green-button:hover {
   padding: 0.3rem;
     a{
       color: white;
+      padding: 0.5rem;
     }
     border: none;
+
 }
 
 .white-button{
   @include button-bg(transparent);
-  padding: 0.3rem;
-    a{
-      @include button-textborder(black);
-    }
+  padding: 1rem 0.5rem 0.5rem 0;
+  a{
+    @include button-textborder(black);
+    padding: 0.5rem;
+  }
+
+
 
 }
 
@@ -580,12 +502,16 @@ a .green-button:hover {
     padding: 0.3rem;
       a{
         @include button-textborder(white);
+        padding: 0.5rem;
       }
 
   }
 
   .more-adv-button{
-    width: 25%;
+    width: 12rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+
   }
 
 
@@ -611,4 +537,13 @@ margin-right: 20px;
 fieldset {
   border: none;
   padding: 1rem;
+}
+
+.width75{
+  width: 75%;
+}
+
+.entry-footer{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

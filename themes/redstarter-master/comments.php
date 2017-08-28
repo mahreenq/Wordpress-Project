@@ -1,5 +1,4 @@
 <?php
-echo 'comments.php begins';
 /**
  * The template for displaying comments.
  *
@@ -68,7 +67,7 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php esc_html( 'Comments are closed.' ); ?></p>
 	<?php endif; ?>
 
-	<?php echo 'comment form in comments'; comment_form( array(
+	<?php  comment_form( array(
 		'title_reply'          => esc_html( 'Post a Comment' ),
 		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
 		'label_submit'         => esc_html( 'Submit' ),
@@ -76,5 +75,3 @@ if ( post_password_required() ) {
 	) ); ?>
 
 </div><!-- #comments -->
-
-<?php echo 'comments.php ends'; ?>

@@ -231,7 +231,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Novecento, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -279,6 +279,15 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+.adventureTitleArchivePage {
+  font-size: 2rem; }
+
+.Merriweather {
+  font-family: Merriweather, serif; }
+
+p {
+  font-family: Merriweather, serif; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -338,6 +347,17 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+#archives-2 ul {
+  color: #238a83;
+  margin: 0;
+  padding: 0; }
+
+#archives-2 .widget-title {
+  text-transform: uppercase; }
+
+.singleproduct img {
+  height: 250px; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -408,9 +428,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
+  color: inherit; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -483,6 +501,46 @@ a {
   text-align: right;
   width: 50%; }
 
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1; }
+
+.menu a, .menu .searchicon {
+  color: #238a83; }
+
+.homelogowhite {
+  display: none; }
+
+.home .homelogowhite, .single-adventure .homelogowhite, .page-id-18 .homelogowhite {
+  display: block; }
+
+.home .homelogogreen, .single-adventure .homelogogreen, .page-id-18 .homelogogreen {
+  display: none; }
+
+.home .menu a, .single-adventure .menu a, .page-id-18 .menu a {
+  color: white; }
+
+.home .menu .searchicon, .single-adventure .menu .searchicon, .page-id-18 .menu .searchicon {
+  color: white; }
+
+.home .main-navigation, .single-adventure .main-navigation, .page-id-18 .main-navigation {
+  border: none;
+  position: absolute; }
+
+a {
+  text-decoration: none; }
+
+.cat-links, .tags-links {
+  text-transform: uppercase; }
+  .cat-links a, .tags-links a {
+    color: #238a83; }
+
+h1 {
+  font-family: Novecento; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -552,6 +610,12 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+.googlemap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 /*--------------------------------------------------------------
 # Content
@@ -654,16 +718,11 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-a {
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: none;
-  color: inherit; }
+.dashedBorderBottom {
+  border-bottom: 1px dashed #c8c8c8; }
 
 .white {
-  color: white; }
+  color: #fff; }
 
 .orange {
   color: #d99054; }
@@ -674,9 +733,9 @@ a:hover {
 .uppercase {
   text-transform: uppercase; }
 
-.flex {
-  display: -ms-flexbox;
-  display: flex; }
+.smallfont {
+  font-size: 0.8rem;
+  padding-bottom: 0.3rem; }
 
 .banner {
   height: 80vh; }
@@ -692,7 +751,6 @@ a:hover {
 .productTypeIcon {
   width: 25%;
   margin: auto;
-  text-align: center;
   border: 2px  solid #e1e1e1;
   padding: 2rem;
   margin: 0.7rem; }
@@ -701,30 +759,15 @@ a:hover {
   width: 30%; }
 
 .homepageTerm {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 90%;
   margin: auto; }
 
 .homeTerms {
-  color: white;
-  background-color: #238a83;
   width: 70%;
   margin: auto; }
 
-.homeTerms a {
-  color: inherit; }
-
 .homedesc {
   padding: 1rem; }
-
-.blogshomepage {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
 
 .bloghomepage {
   width: 30%;
@@ -733,10 +776,12 @@ a:hover {
   margin: 0.7rem; }
 
 .adventureshomepage {
-  display: -ms-flexbox;
-  display: flex;
   color: white;
-  height: 70vh; }
+  height: 70vh;
+  margin-left: 2rem;
+  margin-right: 2rem; }
+  .adventureshomepage .transparent-button {
+    margin-left: 1rem; }
 
 .adventurehomepage {
   padding: 0.3rem;
@@ -759,37 +804,15 @@ a:hover {
   padding: 2rem 1rem 1rem 1rem;
   font-size: 2rem; }
 
-h1 {
-  text-align: center; }
-
 .allproducts {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-top: 2rem; }
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
 
 .singleproduct {
   width: 23%;
   border: 0.5rem solid white; }
 
-.termtitle {
-  border-bottom: 1px dashed #c8c8c8; }
-
-.page-title {
-  padding: 2rem; }
-
-.taxonomy-description {
-  text-align: center;
-  margin-bottom: 3rem; }
-
 .productInfoOnArchive {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
   border: 1px solid #e1e1e1;
   border-top: 5px solid #e1e1e1;
   padding: 0.5rem;
@@ -808,18 +831,13 @@ h1 {
   width: 25%; }
 
 .shoppageTerm {
-  border-bottom: 1px dashed #c8c8c8;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 90%;
-  margin: auto; }
+  margin: auto;
+  padding: none; }
 
 .productTypeIconShopPage {
   width: 25%;
   margin: auto;
-  text-align: center;
   padding: 2rem;
   margin: 0.7rem;
   color: #238a83; }
@@ -833,7 +851,7 @@ h1 {
       align-items: center; }
 
 .aboutContent {
-  margin: 0 8rem 2rem 8rem; }
+  margin: 5rem 8rem 5rem 8rem; }
 
 .aboutContent .p1 .s1 {
   font-size: 1.5rem; }
@@ -844,13 +862,12 @@ h1 {
 
 .adventureSocialMedia {
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  display: flex; }
 
 .singleAdventureSocialMedia {
   border: 1px solid black;
-  padding: 0.3rem 1.5rem 0.3rem 1.5rem; }
+  padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  margin-right: 1rem; }
 
 .productImageSinglePage {
   width: 50%;
@@ -870,23 +887,17 @@ h1 {
   padding-top: 1rem; }
 
 .allAdventures {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 1rem;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  padding: 1rem; }
 
 .singleAdventure {
   width: 45%;
   padding: 2rem 5rem 6rem 2rem;
-  height: 40vh;
+  height: 60vh;
   border: 0.5rem solid white;
   background-position: center center; }
 
-.adventureTitleArchivePage {
-  font-size: 2rem; }
+.single-adventure .banner {
+  background-position: bottom; }
 
 .menu-item {
   padding: 1rem; }
@@ -894,34 +905,8 @@ h1 {
 .menu-primary-menu-container {
   padding-right: 2rem; }
 
-.main-navigation {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  border-bottom: 1px solid #e1e1e1; }
-
 .homelogo img {
   width: 30%; }
-
-.menu a, .menu .searchicon {
-  color: #238a83; }
-
-.homelogowhite {
-  display: none; }
-
-.home .homelogowhite, .single-adventure .homelogowhite, .page-id-18 .homelogowhite {
-  display: block; }
-
-.home .menu a, .single-adventure .menu a, .page-id-18 .menu a, .home .menu .searchicon, .single-adventure .menu .searchicon, .page-id-18 .menu .searchicon {
-  color: white; }
-
-.home .homelogogreen, .single-adventure .homelogogreen, .page-id-18 .homelogogreen {
-  display: none; }
-
-.home .main-navigation, .single-adventure .main-navigation, .page-id-18 .main-navigation {
-  border: none;
-  position: absolute; }
 
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/images/dark-wood.png");
@@ -930,8 +915,6 @@ h1 {
   background-position: center, cover;
   background-size: 100%;
   color: white;
-  display: -ms-flexbox;
-  display: flex;
   margin: auto; }
 
 li {
@@ -975,19 +958,13 @@ li {
   color: #d99054; }
 
 .sidebar {
-  width: 25%;
+  height: 100%;
   font-size: 0.8rem;
   border-left: 1px solid #e1e1e1;
   padding: 1rem; }
   .sidebar .widget-text {
     margin: 2rem;
     line-height: 1px; }
-
-.googlemap {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
 
 .allPosts {
   width: 80%; }
@@ -996,6 +973,9 @@ li {
   height: 70vh;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+
+.single-post .singleJournalOnArchive {
+  width: 75%; }
 
 .singleJournalOnArchive {
   border: 3rem solid white; }
@@ -1011,7 +991,7 @@ li {
   width: 60%;
   background-color: #238a83; }
 
-.page-body {
+.page-body .page-id- {
   width: 75%; }
 
 a .green-button:hover {
@@ -1023,24 +1003,29 @@ a .green-button:hover {
   padding: 0.3rem;
   border: none; }
   .green-button a {
-    color: white; }
+    color: white;
+    padding: 0.5rem; }
 
 .white-button {
   background-color: transparent;
-  padding: 0.3rem; }
+  padding: 1rem 0.5rem 0.5rem 0; }
   .white-button a {
     color: black;
-    border: 1px solid black; }
+    border: 1px solid black;
+    padding: 0.5rem; }
 
 .transparent-button {
   background-color: transparent;
   padding: 0.3rem; }
   .transparent-button a {
     color: white;
-    border: 1px solid white; }
+    border: 1px solid white;
+    padding: 0.5rem; }
 
 .more-adv-button {
-  width: 25%; }
+  width: 12rem;
+  margin-top: 1rem;
+  margin-left: 2rem; }
 
 .searchbox {
   margin-top: 15px;
@@ -1059,6 +1044,13 @@ a .green-button:hover {
 fieldset {
   border: none;
   padding: 1rem; }
+
+.width75 {
+  width: 75%; }
+
+.entry-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .flex {
   display: -ms-flexbox;
@@ -1102,3 +1094,27 @@ fieldset {
 .align-self-flex-end {
   -ms-flex-item-align: end;
       align-self: flex-end; }
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.text-align-center {
+  text-align: center; }
+
+.text-align-left {
+  text-align: left; }
+
+.padding-sm {
+  padding: 2rem; }
+
+.padding-top-bottom-sm {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.padding-med {
+  padding: 4rem; }
+
+@font-face {
+  font-family: Novecento;
+  src: url("http://localhost:8888/wordpress/wp-content/themes/redstarter-master/assets/fonts/Novecento/Novecentosanswide-Normal.ttf") format("truetype"); }

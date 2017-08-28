@@ -1,6 +1,6 @@
-<?php  echo 'home.php; '?>
 
-<?php get_header(); ?>
+
+<?php get_header();?>
  <div class="flex">
 
 <div class="allPosts">

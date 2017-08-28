@@ -6,15 +6,17 @@
  */
 
 ?>
-<?php
+<?php get_banner(); ?>
 
-get_banner();
+<div class="padding-med">
 
-
-      echo '<h2>';
+    <?php  echo '<h1 class="uppercase">';
       the_title();
-      echo '</h2>';
+      echo '</h1>';
       echo '<br>';
       echo 'By '.get_the_author();
       the_content();
       ?>
+      <?php get_template_part( 'template-parts/content-socialmedia' ); ?>
+
+</div>

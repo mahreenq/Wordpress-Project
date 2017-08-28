@@ -5,10 +5,10 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: inherit; //$color__link;
 
 	&:visited {
-		color: $color__link-visited;
+		//color: $color__link-visited;
 	}
 	&:hover,
 	&:focus,
@@ -129,4 +129,59 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+
+
+.main-navigation{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+
+.menu a, .menu .searchicon {
+  color: #238a83;
+}
+
+.homelogowhite {
+  display: none;
+}
+
+
+.home, .single-adventure, .page-id-18 {
+	.homelogowhite{
+		display: block;
+	}
+	.homelogogreen{
+		display: none;
+	}
+
+	.menu {
+				a {
+						color: white;
+					}
+				.searchicon{
+						color:white;
+					}
+				}
+	.main-navigation{
+		border: none;
+		position: absolute;
+	}
+}
+
+a{
+	text-decoration: none;
+}
+
+.cat-links , .tags-links {
+	text-transform: uppercase;
+		a {
+			color: #238a83;
+		}
+}
+
+h1{
+	font-family: Novecento;
 }

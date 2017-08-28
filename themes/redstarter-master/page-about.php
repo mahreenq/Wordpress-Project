@@ -1,5 +1,5 @@
 <?php
-echo 'page-about.php';
+
 
  ?>
 
@@ -9,7 +9,7 @@ echo 'page-about.php';
   get_header();
   get_banner();
 
-  echo '<div class="aboutContent">';
+  echo '<div class="aboutContent ">';
   the_content();
   echo '</div>';
 

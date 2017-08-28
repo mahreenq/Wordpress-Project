@@ -1,17 +1,12 @@
 
-
-
-
 <?php
 /**
  * Template part for displaying single posts.
  *
  * @package RED_Starter_Theme
  */
-
+echo 'lajdnfnknsw';
 ?>
-
-
 
 
 <?php if ( have_posts() ) : ?>
@@ -22,11 +17,12 @@
     echo '<br>';
     echo '<h1>LATEST ADVENTURES</h1>'
 
+
     ?>
   </header><!-- .page-header -->
 
   <?php /* Start the Loop */?>
-  <?php echo '<div class="allAdventures">';  ?>
+  <?php echo '<div class="allAdventures ">';  ?>
   <?php while ( have_posts() ) : the_post(); ?>
 
     <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), full ); ?>

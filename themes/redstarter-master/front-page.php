@@ -8,9 +8,9 @@ get_header(); ?>
 
 <?php get_banner (); ?>
 
-<?php get_template_part( 'template-parts/content-shopstuffhomepage' ); ?>
-<?php get_template_part( 'template-parts/content-journalhomepage' ); ?>
-<?php get_template_part( 'template-parts/content-adventurehomepage' ); ?>
+<?php get_template_part( 'template-parts/shopstuffhomepage' ); ?>
+<?php get_template_part( 'template-parts/journalhomepage' ); ?>
+<?php get_template_part( 'template-parts/adventurehomepage' ); ?>
 
     </main>
 </div>

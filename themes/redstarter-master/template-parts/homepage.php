@@ -8,30 +8,31 @@
 ?>
 <?php
 
-echo ' <h1> INHABITENT JOURNAL</h1>';
+echo ' <h1 class="text-align-center"> INHABITENT JOURNAL</h1>';
 
-echo '<div class="blogshomepage">';
+echo '<div class="blogshomepage flex justify-content-space-around">';
 
 global $query_string;
         query_posts ('posts_per_page=3');
 while ( have_posts() ) : the_post();
-echo '<div class="bloghomepage">';
+echo '<div class="bloghomepage ">';
 the_post_thumbnail();
 ?>
 
 <?php if ( 'post' === get_post_type() ) : ?>
-<div class="entry-meta">
+<div class="entry-meta smallfont Merriweather">
   <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 </div><!-- .entry-meta -->
 
 
-
+<div class="green uppercase">
 <?php the_title(); ?>
+</div>
 
 <?php endif; ?>
 
 <?php
-echo '<br><div class=" white-button"><a   href="'.get_permalink().'"> READ ENTRY </a> </div> </div>';
+echo '<div class=" white-button"><a   href="'.get_permalink().'"> READ ENTRY </a> </div> </div>';
 
 
 endwhile;

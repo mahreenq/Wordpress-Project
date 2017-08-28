@@ -27,10 +27,10 @@
 
 </div> <!--singleJournalImage-->
 
- <div class"journalEcerpt">
+ <div class"journalExcerpt Merriweather">
 <?php the_excerpt();?>
 </div> <!--journal Excerpt-->
 
-<?php echo '<br><a href="'.get_permalink().'"> READ MORE </a>'; ?>
+<?php echo '<div class="white-button"><a href="'.get_permalink().'"> READ MORE <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>'; ?>
 
 </div> <!--singleJournalonArchive-->

@@ -19,14 +19,14 @@
 
 
 
-<div class="productInfoOnArchive">
+<div class="productInfoOnArchive flex align-items-center">
 
-          <div class="productNameOnArchive">
+          <div class="productNameOnArchive Merriweather">
                 <?php echo the_title(); ?>
           </div>
 
 
-          <div class="priceOnArchive">
+          <div class="priceOnArchive Merriweather">
     <?php $mykey_values = get_post_custom_values( 'Price' );
     foreach ( $mykey_values as $key => $value ) {
       echo "$"."$value";

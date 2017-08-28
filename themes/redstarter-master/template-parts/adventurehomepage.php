@@ -11,9 +11,9 @@
 
 
 
-<?php echo '<h1> LATEST ADVENTURES</h1>'; ?>
+<?php echo '<h1 class="text-align-center"> LATEST ADVENTURES</h1>'; ?>
 
-<?php echo '<div class="adventureshomepage">'; ?>
+<?php echo '<div class="adventureshomepage flex">'; ?>
 <?php
 $args = array( 'post_type' => 'adventure', 'posts_per_page' => 4 );
    $loop = new WP_Query( $args );
@@ -41,7 +41,7 @@ $args = array( 'post_type' => 'adventure', 'posts_per_page' => 4 );
 
   <?php
 
-  echo '<div class="adventureTitleHome">';
+  echo '<div class="adventureTitleHome Merriweather">';
   the_title();
   echo '</div>';
 
@@ -51,7 +51,7 @@ $args = array( 'post_type' => 'adventure', 'posts_per_page' => 4 );
 <?php  endwhile; ?>
 </div>
 <?php echo '</div>'; ?>
-<?php echo '<a class="green-button>" href="http://localhost:8888/wordpress/?post_type=adventure"> MORE ADVENTURES </a>'; ?>
+<?php echo '<div class="green-button more-adv-button"><a href="http://localhost:8888/wordpress/?post_type=adventure"> MORE ADVENTURES </a> </div>'; ?>
 
 
 <?php echo '<br>';

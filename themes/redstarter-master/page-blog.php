@@ -1,5 +1,5 @@
 <?php
-echo 'page-15.php begins';
+
 /**
  * The main template file.
  *
@@ -42,4 +42,3 @@ get_header();
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-<?php echo 'index.php ends'; ?>

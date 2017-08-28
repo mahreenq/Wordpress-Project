@@ -4,15 +4,14 @@
  *
  * @package RED_Starter_Theme
  */
-echo 'findus';
+
 get_header();
 
-echo 'page.php';
 
 ?>
 <div class="main-page-body flex">
 	<div class="page-body">
-<h1><?php the_title(); ?></h1>
+<h1 class="text-align-center"><?php the_title(); ?></h1>
 
 
 

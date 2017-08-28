@@ -1,14 +1,9 @@
-
-
-
-
 <?php
 /**
  * Template part for displaying single posts.
  *
  * @package RED_Starter_Theme
  */
-
 ?>
 
 
@@ -19,9 +14,9 @@
 
 
     <?php
-      echo '<div class="adventureTitleArchivePage">';
+      echo '<div class="adventureTitleArchivePage Merriweather">';
       the_title();
       echo '</div>';
-      echo '<br><a href="'.get_permalink().'"> READ MORE </a>';
+      echo '<br><br><div class="transparent-button"><a href="'.get_permalink().'"> READ MORE </a></div>';
     echo '</div>';
     ?>

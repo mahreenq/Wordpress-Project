@@ -7,19 +7,18 @@
 
 get_header();
 
-echo 'search.php';
 
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<section id="primary" class="content-area flex">
+		<main id="main" class="site-main width75 padding-sm" role="main">
 
-	
+
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title text-align-left uppercase"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -38,7 +37,8 @@ echo 'search.php';
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
